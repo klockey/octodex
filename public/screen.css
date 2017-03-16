@@ -1,8 +1,96 @@
-html {
-  text-size-adjust: 100%;
+@import "compass/css3";
+
+section img {
+  margin:16px;
 }
 
-body {
+main{
+  width:100%;
+}
+
+header {
+    background: #f3f3f3;
+    margin:auto;
+    width:100%;
+}
+
+#logo {
+  float: left;
+  display: block;
+  padding: 15px 20px;
+}
+
+.navigation {
+  margin:0px;
+}
+
+header .navigation li a {
+    margin-left: 15px;
+    display: block;
+    line-height: 25px;
+    color: #000;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: black;
+}
+
+.main {
+  list-style: none;
   margin: 0;
-  font: 16px / 1 sans-serif;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+
+.flex-container {
+  list-style: none;
+  margin: 0;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+  // flex-start
+}
+
+
+@media all and (max-width: 800px) {
+  .navigation .container{
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation .container{
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
 }
