@@ -80,17 +80,9 @@ header .navigation li a {
   // flex-start
 }
 
-
-@media all and (max-width: 800px) {
-  .navigation .container{
-    justify-content: space-around;
-  }
-}
-
-@media all and (max-width: 600px) {
-  .navigation .container{
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    padding: 0;
+@media (max-width: 768px) {
+  section img{
+    display: block;
+    margin: 0 auto;}
   }
 }
